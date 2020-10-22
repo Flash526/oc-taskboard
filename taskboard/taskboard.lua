@@ -38,8 +38,11 @@ function MainMenu()
         local inp = io.read()
         if inp == "1" then
             AddNewTask()
+        else
+            if inp == "q" then
+                return
+            end
         end
-        print(inp)
     end
 end
 
